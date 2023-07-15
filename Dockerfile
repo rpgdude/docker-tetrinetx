@@ -61,7 +61,7 @@ COPY docker-entrypoint.sh /usr/local/bin/
 COPY tetrix.linux.fg.sh /opt/tetrinetx/bin/
 
 HEALTHCHECK --interval=5m --timeout=3s \
-  CMD pidof supervisor
+  CMD pidof supervisord
 
 EXPOSE 31457/tcp 31458/tcp 80/tcp
 
